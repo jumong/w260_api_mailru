@@ -1,0 +1,13 @@
+w260_api_mailru: working with mail.ru by api
+============================================
+
+Working with mail.ru by API
+
+Reference
+=========
+
+Документация по API Mail.Ru
+http://api.mail.ru/docs/
+
+users.getInfo -- rest api
+http://api.mail.ru/docs/reference/rest/users-getinfo/

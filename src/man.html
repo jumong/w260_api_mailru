@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>Title of the Page</title>
+</head>
+<body>
+
+<h2><a href="http://api.mail.ru/sites/">Сайты</a></h2>
+<ul>
+	<li><a href="http://my.mail.ru/cgi-bin/connect/view">Сайты, которые вы связали с вашим аккаунтом в Mail.Ru</a></li>
+	<li><a href="http://api.mail.ru/sites/my/">Мои сайты</a></li>
+	<li><a href="http://api.mail.ru/sites/my/add/">Подключить сайт</a></li>
+	<li>
+		<a href="http://api.mail.ru/docs/guides/restapi/#permissions">Привилегии</a>
+		<blockquote cite="http://api.mail.ru/docs/guides/sites/">
+			Для установки (коннекта) внешнего сайта надо пользоваться либо
+			<a href="http://api.mail.ru/docs/guides/oauth/sites">OAuth-авторизацией для сайтов</a>,
+			либо функцией <a href="http://api.mail.ru/docs/reference/js/connect.login">connect.loginjs</a>.
+		</blockquote>
+		<blockquote cite="http://api.mail.ru/docs/guides/sites/">
+			Привилегии в различных контекстах запрашиваются
+			по-разному: для приложений в Моем Мире это делается
+			через <strong>настройки приложения</strong>, для
+			standalone-приложений и сайтов запросить привилегии
+			можно либо через параметр
+			<strong><code>scope</code></strong> OAuth-авторизации,
+			либо в параметрах функции connect.loginjs.
+		</blockquote>
+		<blockquote cite="http://api.mail.ru/docs/guides/sites/">
+			Привилегии распространяются <strong>только</strong> на
+			функции REST API.  Функции JS API <strong>не зависят от
+			привилегий</strong> и при попытке записи в Мой Мир
+			всегда показывают пользователю диалог с запросом
+			подтверждения действия. Вы можете выбирать просить ли у
+			пользователя привилегии и использовать REST API или
+			использовать диалоги из JS API.
+		</blockquote>
+	</li>
+</ul>
+
+<h2><a href="http://api.mail.ru/apps/">Приложения</a></h2>
+<ul>
+	<li><a href="http://api.mail.ru/apps/my/">Мои приложения</a></li>
+	<li><a href="http://api.mail.ru/apps/my/add/">Создать приложение</a></li>
+</ul>
+
+<h2>api</h2>
+<ul>
+	<li><a href="http://api.mail.ru/docs/guides/jsapi/">Руководство по использованию JS API</a></li>
+	<li><a href="http://api.mail.ru/docs/guides/restapi/">Руководство по использованию REST API</a></li>
+</ul>
+
+<h2><a href="http://api.mail.ru/docs/guides/oauth/">OAuth авторизация</a></h2>
+<ul>
+	<li><a href="http://api.mail.ru/docs/guides/oauth/sites/">Авторизация для сайтов</a></li>
+</ul>
+
+<h2 style="color: red;">ошибки документации</h2>
+<blockquote cite="http://api.mail.ru/docs/guides/sites/" style="font-size: 20px;">
+	<a href="http://api.mail.ru/docs/guides/sites/">http://api.mail.ru/docs/guides/sites/</a>
+	Технически, API для сайтов представляет механизм для получения
+	необходимых данных (сессии) для осуществления вызовов API приложений
+	моего мира. То есть сначала надо получить сессию (это делается
+	<strong style="color: red;">только</strong> через JavaScript
+	библиотеку), а потом можно обращаться к API приложений любыми
+	способами, как это делают приложения (используя JS, Perl, PHP или
+	что-то еще).
+</blockquote>
+<p style="margin-left: 5em; border-left: 2px solid black; border-bottom: 2px solid black; padding-left: 0.5em;">вот это <strong style="color: red;">только</strong> заставило
+меня думать, что у mail.ru нет OAuth авторизации. а она
+<a href="http://api.mail.ru/docs/guides/oauth/sites/">есть</a>!</p>
+
+<h2>безопасность</h2>
+<li><a href="http://api.mail.ru/docs/guides/oauth/sites/">Важное замечание по безопасности</a></li>
+
+</body>
+</html>
